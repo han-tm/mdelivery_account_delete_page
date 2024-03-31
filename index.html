@@ -54,8 +54,14 @@
         <p>Если вы хотите удалить свой аккаунт в приложении MDelivery, пожалуйста, введите свой адрес электронной почты ниже, и мы свяжемся с вами для подтверждения.</p>
         <form action="удаление_аккаунта.php" method="post">
             <input type="email" name="email" placeholder="Введите ваш email" required>
-            <input type="submit" value="Подтвердить запрос">
+            <input type="button" value="Подтвердить запрос" onclick="showProcessingMessage()">
         </form>
     </div>
+
+    <script>
+        function showProcessingMessage() {
+            alert("Ваш запрос обрабатывается!");
+        }
+    </script>
 </body>
 </html>
