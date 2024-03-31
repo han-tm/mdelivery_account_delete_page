@@ -60,7 +60,9 @@
 
     <script>
         function showProcessingMessage() {
+          var emailInput = document.getElementById("email");
             alert("Ваш запрос обрабатывается!");
+            emailInput.value = ""; 
         }
     </script>
 </body>
